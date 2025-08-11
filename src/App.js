@@ -7,6 +7,7 @@ import Experience from './Components/Experience';
 import Resume from './Components/Resume';
 import ThemeToggle from './Components/ThemeToggle';
 import './App.css';
+import './Assets/Css/Style.css'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

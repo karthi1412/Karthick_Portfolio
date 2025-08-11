@@ -85,18 +85,15 @@
   color: var(--accent-dark);
 }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
+
 
 
 
 /* === Theme Toggle === */
 .theme-toggle {
   position: fixed;
-  top: 18px;
-  right: 20px;
+  top: 25px;
+  right: 10px;
   z-index: 1000;
   cursor: pointer;
   font-size: 1.3rem;
@@ -353,8 +350,8 @@ iframe {
 
   .theme-toggle {
     font-size: 1.1rem;
-    top: 16px;
-    right: 16px;
+    top: 25px;
+    right: 10px;
   }
 }
 /* === Navbar === */
@@ -362,12 +359,12 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 25px 30px;
   background: inherit;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 1000;
   position: fixed;
-  width: 96%;
+  width: 100%;
   top: 0;
 }
 

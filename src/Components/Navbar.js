@@ -36,21 +36,60 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar">
-      <div className="logo">KARTHICK M V</div>
-      <ul className="nav-links">
-        {sections.map((sec) => (
-          <li key={sec}>
+    <>
+        {/* <nav className="navbar">
+        <div className="logo">KARTHICK M V</div>
+        <ul className="nav-links">
+          {sections.map((sec) => (
+            <li key={sec}>
+              <button
+                onClick={() => scrollToSection(sec)}
+                className={`nav-btn ${active === sec ? 'active' : ''}`}
+              >
+                {sec.charAt(0).toUpperCase() + sec.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav> */}
+
+
+        <nav className="navbar navbar-expand-lg fixed-top top-navbar">
+          <div className="container-fluid">
+            <div className="logo" href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
+              KARTHICK M V
+            </div>
+
             <button
-              onClick={() => scrollToSection(sec)}
-              className={`nav-btn ${active === sec ? 'active' : ''}`}
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              {sec.charAt(0).toUpperCase() + sec.slice(1)}
+              <span className="navbar-toggler-icon"></span>
             </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
+
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto nav-links">
+                {sections.map((sec) => (
+                  <li key={sec} className="nav-item">
+                    <a
+                      href={`#${sec}`}
+                      className={`nav-btn ${active === sec ? 'active' : ''}`}
+                      onClick={(e) => { e.preventDefault(); scrollToSection(sec); }}
+                    >
+                      {sec.charAt(0).toUpperCase() + sec.slice(1)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </>
   );
 };
 

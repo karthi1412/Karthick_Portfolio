@@ -4,6 +4,32 @@
         font-size: 1.6rem;
         font-weight: bold;
     }
+
+    .home-section .banner-img {
+        width: -webkit-fill-available;
+        height: auto;
+    }
+
+    .home-section .home-text {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .about-section p {
+        font-size: 20px;
+    }
+
+    .skills-section p {
+        font-size: 20px;
+    }
+
+    .experience-section li {
+        font-size: 20px;
+    }
 }
 
 /*======== Desktop End======= */
@@ -13,6 +39,32 @@
     .logo {
         font-size: 1.2rem;
         font-weight: bold;
+    }
+
+    .home-section .banner-img {
+        width: 250px;
+        height: auto;
+    }
+
+    .home-section .home-text {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+
+    .skills-section p {
+        font-size: 16px;
+    }
+
+    .experience-section li {
+        font-size: 16px;
     }
 }
 
@@ -24,4 +76,16 @@
 
 .top-navbar .navbar-toggler-icon {
     filter: brightness(0.5) invert(0.5);
+}
+
+.about-section strong {
+    font-weight: 600;
+}
+
+.skills-section strong {
+    font-weight: 600;
+}
+
+.skills-section code {
+    font-size: 1em;
 }

@@ -8,7 +8,7 @@ function Contact() {
                 <section id="contact me" className="contact-section text-center">
                     <h2>Contact Me</h2>
                     <p className='text-one'>
-                        Let’s connect ! For Collaborations, Inquiries, or Professional Opportunities, Feel free to reach out via the contact details below.
+                        Let’s connect ! For Collaborations, Inquiries or Professional Opportunities, Feel free to reach out via the contact details below.
                     </p>
                     <p>
                         <a href="tel:+918838471230" className='text-two'>+91 8838471230</a>

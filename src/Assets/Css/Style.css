@@ -30,6 +30,16 @@
     .experience-section li {
         font-size: 20px;
     }
+
+    .contact-section .text-one {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contact-section .text-two {
+        font-size: 24px;
+        font-weight: 600;
+    }
 }
 
 /*======== Desktop End======= */
@@ -66,6 +76,16 @@
     .experience-section li {
         font-size: 16px;
     }
+
+    .contact-section .text-one {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contact-section .text-two {
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
 
 /*======== Mobile End======= */
@@ -88,4 +108,17 @@
 
 .skills-section code {
     font-size: 1em;
+}
+
+.contact-section .text-two {
+    text-decoration: none;
+
+}
+
+.app.dark .contact-section .text-two {
+    color: var(--text-dark);
+}
+
+.app:not(.dark) .contact-section .text-two {
+    color: var(--text-light)
 }

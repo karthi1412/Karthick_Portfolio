@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const sections = ['home', 'about', 'skills', 'experience', 'resume'];
+const sections = ['home', 'about', 'skills', 'experience', 'resume', 'contact me'];
 
 const Navbar = () => {
   const [active, setActive] = useState('home');
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <>
-        {/* <nav className="navbar">
+      {/* <nav className="navbar">
         <div className="logo">KARTHICK M V</div>
         <ul className="nav-links">
           {sections.map((sec) => (
@@ -54,41 +54,42 @@ const Navbar = () => {
       </nav> */}
 
 
-        <nav className="navbar navbar-expand-lg fixed-top top-navbar">
-          <div className="container-fluid">
-            <div className="logo" href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
-              KARTHICK M V
-            </div>
-
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav ms-auto nav-links">
-                {sections.map((sec) => (
-                  <li key={sec} className="nav-item">
-                    <a
-                      href={`#${sec}`}
-                      className={`nav-btn ${active === sec ? 'active' : ''}`}
-                      onClick={(e) => { e.preventDefault(); scrollToSection(sec); }}
-                    >
-                      {sec.charAt(0).toUpperCase() + sec.slice(1)}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      <nav className="navbar navbar-expand-lg fixed-top top-navbar">
+        <div className="container-fluid">
+          <div className="logo" href="#home" style={{ cursor: "pointer" }}
+            onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
+            KARTHICK M V
           </div>
-        </nav>
+
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto nav-links">
+              {sections.map((sec) => (
+                <li key={sec} className="nav-item">
+                  <a
+                    href={`#${sec}`}
+                    className={`nav-btn ${active === sec ? 'active' : ''}`}
+                    onClick={(e) => { e.preventDefault(); scrollToSection(sec); }}
+                  >
+                    {sec.charAt(0).toUpperCase() + sec.slice(1)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
     </>
   );
 };

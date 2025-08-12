@@ -26,7 +26,7 @@ const Experience = () => {
 
           <div className="timeline-item">
             <div className='skill-card'>
-              <h3>Junior Front End Developer | Clarisco Solutions |<span> Jun 2023 – Jul 2025</span></h3>
+              <h3>Junior Front End Developer | Clarisco Solutions |<span className='fs-5'> Jun 2023 – Jun 2025</span></h3>
               <ul>
                 <li>
                   Specialized in building responsive and interactive web applications using HTML, CSS, JavaScript, React JS, Redux, Bootstrap, SCSS, Material UI and jQuery.

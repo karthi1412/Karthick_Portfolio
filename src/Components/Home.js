@@ -18,20 +18,27 @@ const Home = () => {
                 A Passionate <span className="highlight">Front End Developer</span>
               </h1>
               <p className='home-text'>I specialize in building responsive and interactive web application using modern tools and technologies.</p>
-              <div className="footer-icons">
-                <a href="https://github.com/karthi1412" target="_blank" rel="noreferrer" aria-label="GitHub">
-                  <FaGithub />
-                </a>
+              <div className="footer-icons justify-content-start">
                 <a href="https://www.linkedin.com/in/karthick-mv1412/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                   <FaLinkedin />
                 </a>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karthickmsd23@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
                   <FaEnvelope />
                 </a>
+                <a href="https://github.com/karthi1412" target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <FaGithub />
+                </a>
+              </div>
+              <div className='d-flex gap-5 mt-3'>
+                <div>
+                  <a href={`${process.env.PUBLIC_URL}/Karthick_Frontend.pdf`} download className="resume-button">
+                    Download Resume
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div className='col-lg-4 col-12 mt-2'>
+          <div className='col-lg-4 col-12 mt-3'>
             <img src={bannerone} alt='Technologies' className='banner-img' />
           </div>
         </div>

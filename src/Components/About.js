@@ -8,7 +8,7 @@ const About = () => {
 
         <h2>About Me</h2>
         <p>
-          I’m a passionate and experienced <strong>Front End Developer</strong> with over 2 years of hands-on experience crafting responsive and high-performance <strong>Web Applications</strong>. My technical toolkit includes <strong>React.js</strong>, <strong>JavaScript (ES6)</strong>, <strong>HTML5</strong>, <strong>CSS3/SCSS</strong>, and seamless integration with <strong>RESTful APIs</strong>.
+          I’m a passionate and experienced <strong>Front End Developer</strong> with over 2 years of hands-on experience crafting responsive and high-performance <strong>Web Applications</strong>. My technical toolkit includes <strong>React.js</strong>, <strong>JavaScript (ES6)</strong>, <strong>HTML5</strong>, <strong>CSS3/SCSS</strong>, <strong>Bootstrap</strong>, <strong>Material UI</strong>, <strong>NextJS</strong>, and seamless integration with <strong>RESTful APIs</strong>.
         </p>
         <p>
           I specialize in building scalable, maintainable front-end architectures using modern React features such as <strong>Hooks</strong>

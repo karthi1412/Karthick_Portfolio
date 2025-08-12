@@ -8,6 +8,7 @@ import Resume from './Components/Resume';
 import ThemeToggle from './Components/ThemeToggle';
 import './App.css';
 import './Assets/Css/Style.css';
+import Contact from './Components/Contact';
 
 function App() {
   // Load initial theme from localStorage, default to false (light)
@@ -30,6 +31,7 @@ function App() {
       <Skills />
       <Experience />
       <Resume />
+      <Contact/>
     </div>
   );
 }

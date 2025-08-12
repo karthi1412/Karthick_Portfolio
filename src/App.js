@@ -9,6 +9,7 @@ import ThemeToggle from './Components/ThemeToggle';
 import './App.css';
 import './Assets/Css/Style.css';
 import Contact from './Components/Contact';
+import Project from './Components/Project';
 
 function App() {
   // Load initial theme from localStorage, default to false (light)
@@ -30,8 +31,9 @@ function App() {
       <About />
       <Skills />
       <Experience />
+      <Project />
       <Resume />
-      <Contact/>
+      <Contact />
     </div>
   );
 }

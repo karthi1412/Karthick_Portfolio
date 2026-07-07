@@ -41,6 +41,7 @@ const Home = () => {
           <div className='col-lg-4 col-12 mt-3'>
             <img src={bannerone} alt='Technologies' className='banner-img' />
           </div>
+          
         </div>
       </div>
     </section>
